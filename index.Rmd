@@ -15,10 +15,11 @@ classoption: "hyperref,"
 
 #### 1. [安装](#install)
 #### 2. [示例](#example)
-##### 2.1 [一般示例](#example1)
-##### 2.2 [定制颜色](#example2)
-##### 2.3 [定制形状](#example3)
-##### 2.4 [文字云词图](#example4)
+* 2.1 [一般示例](#example1)
+* 2.2 [定制颜色](#example2)
+* 2.3 [定制形状](#example3)
+* 2.4 [文字云词图](#example4)
+
 #### 3. [交互](#jiaohu)
 
 现在你也可以在R语言中绘制多样的词云了。[wordcloud2](https://github.com/Lchiffon/wordcloud2)是基于[wordcloud2.js](https://github.com/timdream/wordcloud2.js)封装的一个R包，使用HTML5的canvas绘制。浏览器的可视化具有动态和交互效果，相对于曾经的R包worldcoud，wordcloud2还支持任意形状的词云绘制，这也是我一直想要寻求的特性。
@@ -68,15 +69,15 @@ R中的函数向量: js回调函数想必让很多纯R语言用户懵逼，最�
 
 ```{r eval=FALSE}
 wordcloud2(demoFreqC, figPath='batman.png', color = "black", size = 1) 
+#由于速度原因这里就没放原图，而是原图的截图。
 ```
-![](batman.png)
 ![](batman_word.png)
 
 
 ```{r eval=FALSE}
 wordcloud2(demoFreq, figPath='spiderman.png', color = "red", size = 1)
+#由于速度原因这里就没放原图，而是原图的截图。
 ```
-![](spiderman.png)
 ![](spiderman_word.png)
 
 ### 2.4 文字云词图 {#example4}
